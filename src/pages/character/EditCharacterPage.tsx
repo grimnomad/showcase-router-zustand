@@ -1,15 +1,16 @@
+import { ConfirmInput } from "../../design-system";
 import { useCharacter, useSetCharacter } from "./CharacterProvider";
 
 function EditCharacterPage() {
   const character = useCharacter();
   const setCharacter = useSetCharacter();
 
-  function onChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setCharacter({ ...character, name: event.target.value });
+  function onChange(value: string) {
+    setCharacter({ ...character, name: value });
   }
 
   return <div>
-    <input type="text" value={character.name} onChange={onChange}/>
+    <ConfirmInput value={character.name} onChange={onChange}/>
   </div>;
 }
 
