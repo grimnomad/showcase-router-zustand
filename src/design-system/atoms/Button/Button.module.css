@@ -4,9 +4,9 @@
 }
 
 .normal {
-  background-color: aliceblue;
+  background-color: var(--color-normal);
 }
 
 .warning {
-  background-color: red;
+  background-color: var(--color-warning);
 }

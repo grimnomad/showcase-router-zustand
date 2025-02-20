@@ -3,9 +3,9 @@
 }
 
 .normal {
-  border-color: #fff;
+  border-color: var(--color-normal);
 }
 
 .warning {
-  border-color: red;
+  border-color: var(--color-warning);
 }
