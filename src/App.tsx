@@ -1,4 +1,5 @@
 import { useNavigate } from "@tanstack/react-router";
+import { Button } from "./design-system";
 
 function App() {
   const navigate = useNavigate();
@@ -8,9 +9,9 @@ function App() {
   }
 
   return (
-    <button onClick={onClick}>
+    <Button background="warning" onClick={onClick}>
       Go to Characters
-    </button>
+    </Button>
   )
 }
 

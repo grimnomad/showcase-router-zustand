@@ -1,0 +1,12 @@
+.Button {
+  border: 1px solid black;
+  height: 3em;
+}
+
+.normal {
+  background-color: aliceblue;
+}
+
+.warning {
+  background-color: red;
+}

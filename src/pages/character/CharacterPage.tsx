@@ -3,6 +3,7 @@ import { Outlet, useParams, useNavigate } from "@tanstack/react-router";
 import { CharacterQueryFactory } from "../../api/Character/CharacterQueryFactory";
 import { getIdFromUrl } from "./getIdFromUrl";
 import { CharacterProvider } from "./CharacterProvider";
+import { Button } from "../../design-system";
 
 function CharacterPage() {
   const { character: characterID } = useParams({ from: "/characters/$character" });
@@ -18,7 +19,7 @@ function CharacterPage() {
   return (
     <CharacterProvider initialCharacter={character}>
       <h1>{character.name}</h1>
-      <button onClick={() => onClick(getIdFromUrl(character.url))}>Edit</button>
+      <Button onClick={() => onClick(getIdFromUrl(character.url))}>Edit</Button>
       <Outlet />
     </CharacterProvider>
   );
