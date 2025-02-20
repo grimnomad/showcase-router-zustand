@@ -1,0 +1,11 @@
+.Input {
+  border: 1px solid #ccc;
+}
+
+.normal {
+  border-color: #fff;
+}
+
+.warning {
+  border-color: red;
+}
